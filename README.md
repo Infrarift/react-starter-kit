@@ -7,6 +7,25 @@ I have created this starter kit mostly as a reference for myself as I learn how 
 
 This was my entry point into learning React. This is an excellent Udemy course by a cool German dude. I already knew some Javascript going into this.
 
+### Useful Snippets
+
+```jsx
+// Route some JSX to an exact path.
+import {Route} from "react-router-dom";
+<Route path="/" exact render={() => <h1>Hello World</h1>} />
+<Route path="/" exact component={MyComponent} />
+```
+
+```jsx
+// Creating a link as a MenuItem.
+import {Menu} from "semantic-ui-react";
+import {Link} from "react-router-dom";
+
+<Menu.Item as={Link} to='profile'>
+  My profile
+</Menu.Item>
+```
+
 ### Libraries and Shit
 
 ```bash
